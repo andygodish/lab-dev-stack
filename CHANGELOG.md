@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/andygodish/lab-dev-stack/compare/v0.1.1...v0.1.2) (2024-11-07)
+
+
+### Miscellaneous
+
+* release 0.1.2 ([92385d9](https://github.com/andygodish/lab-dev-stack/commit/92385d94b690db8003c812a40f7c1d60f46b84d7))
+
 ## [0.1.1](https://github.com/andygodish/uds-dev-stack/compare/v0.1.1...v0.1.1) (2024-10-01)
 
 
