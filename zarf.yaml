@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/defenseunicorns/zarf/main/zarf.schema.json
+
+kind: ZarfPackageConfig
+metadata:
+  name: uds-dev-stack
+  description: "Standalone dev stack with some more bells and whistles. For deployments to remote clusters instead of k3d."
+  url: https://github.com/andygodish/uds-dev-stack
+  yolo: true
+  # x-release-please-start-version
+  version: 0.1.1
+  # x-release-please-end
+
+components:
+  - name: uds-dev-stack
+    required: true
+    description: "Install MetalLB, NGINX, Minio, local-path-rwx and Ensure MachineID to meet UDS developer needs without later config changes"
+    actions:
+      onDeploy:
+        before:
+          - cmd: ./zarf tools kubectl get nodes -o=jsonpath='{.items[0].status.addresses[?(@.type=="InternalIP")].address}' | cut -d'.' -f1-3
+            description: "Load network ip base for MetalLB"
+            setVariables:
+              - name: BASE_IP
+        after:
+          - cmd: ./zarf tools kubectl rollout restart deployment coredns -n kube-system
+            description: "Restart CoreDNS to pick up internal DNS override for uds.dev"
+    charts:
+      - name: metallb
+        namespace: uds-dev-stack
+        url: https://metallb.github.io/metallb
+        version: 0.14.6
+      - name: uds-dev-stack
+        namespace: uds-dev-stack
+        localPath: chart
+        # x-release-please-start-version
+        version: 0.1.1
+        # x-release-please-end
+      - name: minio
+        namespace: uds-dev-stack
+        version: 5.2.0
+        url: https://charts.min.io/
+        valuesFiles:
+          - "values/minio-values.yaml"
