@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/andygodish/lab-dev-stack/compare/v0.1.2...v0.2.0) (2024-11-08)
+
+
+### Features
+
+* added nfs provisioner to stack ([7449295](https://github.com/andygodish/lab-dev-stack/commit/7449295d00b6832db894a88f20a0f06a4114a79d))
+
 ## [0.1.2](https://github.com/andygodish/lab-dev-stack/compare/v0.1.1...v0.1.2) (2024-11-07)
 
 
