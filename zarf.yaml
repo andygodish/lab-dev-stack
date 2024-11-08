@@ -41,3 +41,9 @@ components:
         url: https://charts.min.io/
         valuesFiles:
           - "values/minio-values.yaml"
+      - name: nfs-subdir-external-provisioner
+        namespace: uds-dev-stack
+        version: 4.0.18
+        url: https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner/
+        valuesFiles:
+          - "values/nfs-values.yaml"
