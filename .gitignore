@@ -20,3 +20,4 @@ src/cert-manager/issuers/letsencrypt-*.yaml
 src/cert-manager/issuers/secret-*
 
 bundles/init/external-cluster/uds-config.yaml
+common.json
