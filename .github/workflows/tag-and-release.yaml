@@ -34,7 +34,7 @@ jobs:
 
       - name: Setup UDS
         if: always()
-        uses: defenseunicorns/uds-common/.github/actions/setup@164ce64c5cc775193a563db7e8ef9750ffefcdda # v1.3.0
+        uses: defenseunicorns/uds-common/.github/actions/setup@a94be6798ba20e2d23fe16afc6578e442e55fb0a # v1.5.1
 
       - name: Login to GHCR
         uses: docker/login-action@9780b0c442fbb1117ed29e0efdff1e18412f7567 # v3
