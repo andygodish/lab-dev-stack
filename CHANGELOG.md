@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.1](https://github.com/andygodish/lab-dev-stack/compare/v0.2.0...v0.2.1) (2024-12-11)
+
+
+### Miscellaneous
+
+* added tasks.yaml, testing raw.githubusercontent for renovate config ([aeed0b7](https://github.com/andygodish/lab-dev-stack/commit/aeed0b7765016271c9d067b1d0acb26270a5b962))
+* **deps:** update support-deps to v1.3.0 ([15d2f06](https://github.com/andygodish/lab-dev-stack/commit/15d2f069d69b5675e255e50fbe702ba67e756020))
+* **deps:** update support-deps to v1.5.1 ([91b9d14](https://github.com/andygodish/lab-dev-stack/commit/91b9d14ae1ac6229078a968bcf615e876a61c3ac))
+* **deps:** update uds common support dependencies ([ef6f83d](https://github.com/andygodish/lab-dev-stack/commit/ef6f83d78e10c328ae2235b84ec787e8b13cee16))
+
 ## [0.2.0](https://github.com/andygodish/lab-dev-stack/compare/v0.1.2...v0.2.0) (2024-11-08)
 
 
