@@ -7,7 +7,7 @@ metadata:
   url: https://github.com/andygodish/uds-dev-stack
   yolo: true
   # x-release-please-start-version
-  version: 0.2.0
+  version: 0.2.1
   # x-release-please-end
 
 components:
@@ -33,7 +33,7 @@ components:
         namespace: uds-dev-stack
         localPath: chart
         # x-release-please-start-version
-        version: 0.2.0
+        version: 0.2.1
         # x-release-please-end
       - name: minio
         namespace: uds-dev-stack
